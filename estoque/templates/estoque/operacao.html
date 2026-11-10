@@ -1,0 +1,27 @@
+
+{% extends 'estoque/base.html' %}
+
+{% block title %}Operação de estoque{% endblock %}
+
+{% block content %}
+
+<h2 class="mb-4">{{ tipo|title }}</h2>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit" class="btn btn-primary">
+                Confirmar operação
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

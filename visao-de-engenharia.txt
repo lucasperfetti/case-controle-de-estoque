@@ -1,0 +1,14 @@
+1 - Integridade dos dados
+É de extrema importância garantir que os dados manipulados pelo projeto sejam confiáveis, mantendo sua consistência e integridade durante as operações, além de assegurar a proteção adequada durante o armazenamento e a consulta.
+
+2 - Testes automatizados
+Durante o desenvolvimento e a implantação do projeto, a utilização de testes automatizados otimiza o tempo de validação, facilita a identificação de erros e aumenta a confiabilidade da aplicação.
+
+3 - Controle de acesso
+Por se tratar de um sistema de controle de estoque, é importante que a aplicação possua mecanismos de autenticação e diferentes níveis de permissão entre os usuários, restringindo operações de acordo com suas responsabilidades.
+
+4 - Arquitetura modular
+A arquitetura modular do código-fonte facilita a manutenção da aplicação e a criação de novas funcionalidades, mantendo as principais responsabilidades e regras de negócio organizadas em módulos específicos.
+
+5 - Disponibilidade
+Garantir que a aplicação esteja hospedada em uma infraestrutura confiável, com alta disponibilidade e mecanismos de recuperação de falhas. Dependendo da necessidade, podem ser utilizados balanceadores de carga para distribuir as requisições e reduzir o risco de indisponibilidade.
