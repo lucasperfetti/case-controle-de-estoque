@@ -239,7 +239,6 @@ limitações importantes:
 -   Python instalado e disponível no terminal.
 -   pip instalado.
 -   Acesso ao diretório do projeto.
--   Dependências do projeto listadas em `requirements.txt`.
 
 ### 6.2. Preparar o ambiente
 
@@ -263,52 +262,6 @@ Instale as dependências:
 pip install -r requirements.txt
 ```
 
-Caso ainda não exista um `requirements.txt`, instale o Django:
-
-``` bash
-pip install django
-```
-
-E, se desejar registrar as dependências instaladas:
-
-``` bash
-pip freeze > requirements.txt
-```
-
-### 6.3. Conferir as configurações
-
-Verifique se a aplicação `estoque` está registrada em `INSTALLED_APPS`,
-no arquivo `config/settings.py`. Por exemplo:
-
-``` python
-INSTALLED_APPS = [
-    # Aplicativos padrão do Django...
-    'estoque.apps.EstoqueConfig',
-]
-```
-
-Confira também se `estoque/apps.py` define corretamente o nome da
-aplicação:
-
-``` python
-from django.apps import AppConfig
-
-class EstoqueConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'estoque'
-```
-
-Confirme que o arquivo `config/urls.py` inclui as rotas da aplicação:
-
-``` python
-from django.contrib import admin
-from django.urls import include, path
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('estoque.urls')),
-]
-```
 
 ### 6.4. Criar e aplicar as migrações
 
