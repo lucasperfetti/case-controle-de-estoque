@@ -1,0 +1,32 @@
+Ia utilizada: ChatGPT
+
+
+"Quero fazer uma interface simples para uma aplicação de controle de estoque usando django + sqlite. os produtos precisam das seguintes informações:
+- Identificação do produto,
+- quantidade total,
+- quantidade disponivel,
+- quantidade reservada,
+- quantidade bloqueada.
+Funcionalidades do projeto:
+- Entrada: Quantidade de produtos novos inseridos
+- Saída: Quantidade de produtos retirados do estoque (apenas se tiver estoque disponível),
+- Reservar: reservar quantidade desejada de um produto disponível para possível solicitação/pedido (a reserva deve ter uma identificação para posterior checagem),
+- Bloquear: Bloquear certa quantidade de algum produto, tornando essas unidades indisponíveis para outras operações (deverá ter uma identificação para consulta e liberação posterior)
+- Liberar: Permitir liberação de uma reserva ou bloqueio existente, retornando a respectiva quantidade disponível no estoque,
+- Consultar: Consultar a situação atual de determinado produto, apresentando quantidade total, quantidade disponível, quantidade reservada e quantidade bloqueada"
+
+Após definir a linguagem e Frameworks que seriam utilizados no projeto, passei para a IA uma visão completa das principais funcionalidades da aplicação
+para ter uma base dos arquivos necessários para o projeto e template inicial para trabalhar em cima. Preferi essa abordagegm por se tratar de um projeto
+simples com operações pouco complexas para serem implementadas, a IA nesse caso foi usada para agilizar o desenvolvimento do código fonte.
+
+"Agora crie um arquivo .md para documentação do projeto, com as seguintes informações o projeto:
+• visão geral da solução;
+• arquitetura/estrutura adotada;
+• principais decisões técnicas;
+• premissas consideradas;
+• limitações conhecidas;
+• instruções para execução;
+• o que você faria diferente caso essa solução precisasse operar em um ambiente real de produção."
+
+Utilizei a IA para criação da documentação principal do projeto, contento as informações técnicas do projeto e próximos passos para implementação real.
+

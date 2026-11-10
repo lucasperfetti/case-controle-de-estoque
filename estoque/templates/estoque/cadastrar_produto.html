@@ -1,0 +1,30 @@
+
+{% extends 'estoque/base.html' %}
+
+{% block title %}Cadastrar produto{% endblock %}
+
+{% block content %}
+
+<h2 class="mb-4">Cadastrar produto</h2>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit" class="btn btn-primary">
+                Cadastrar
+            </button>
+
+            <a href="{% url 'produtos' %}" class="btn btn-secondary">
+                Cancelar
+            </a>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
